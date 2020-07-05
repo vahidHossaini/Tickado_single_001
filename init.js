@@ -6,7 +6,6 @@ var getCopy=function(data)
 function getParams(self,name){
   return  self.$route.params[name]
 }
-
 var setPageName=function(name){
   console.log('element is : ',document.getElementById('hPageName'))
   document.getElementById('hPageName').innerHTML=name
