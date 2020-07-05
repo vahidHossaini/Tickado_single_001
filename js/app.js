@@ -11,7 +11,7 @@ function startRecording()
 		input = audioContext.createMediaStreamSource(stream);
 		recorder = new WebAudioRecorder(input, {
 			workerDir: "js/", // must end with slash
-			encoding: 'mp3',
+			encoding: 'wav',
 			numChannels:2, //2 is the default, mp3 encoding supports only 2
 			onEncoderLoading: function(recorder, encoding) { 
 				//__log("Loading "+encoding+" encoder...");
